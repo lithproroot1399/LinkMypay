@@ -1,6 +1,6 @@
 export function List() {
   return (
-    <div className="w-full max-w-sm rounded-lg shadow-md p-4 mb-4 bg-zinc-900">
+    <div className="w-full max-w-sm rounded-lg shadow-md p-4 mb-4 bg-black">
       <ul className="text-green-500 space-y-2">
         <li className="p-2 border border-green-500 rounded-md transition-colors duration-200 cursor-pointer hover:bg-zinc-800">
           CASA

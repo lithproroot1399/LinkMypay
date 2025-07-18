@@ -1,53 +1,46 @@
-import Image from "next/image";
+import { Input } from '@/components/input';
+import React from 'react';
 
 export default function Home() {
   return (
+    <div className="flex flex-col items-center justify-center min-h-screen bg-black p-4">
+      <h1 className="text-3xl font-bold text-green-300 mb-6">Lista de Itens</h1>
 
-    <><div className="flex items-center justify-between m-4">
-      <main>
-        <input
-          className="border border-gray-300 rounded-md p-2"
-          width={300}
-          height={50}
-          type="text"
-          placeholder="Search..." />
+      <Input />
 
-        <div className="text-green-400 flex flex-col gap-2 mt-4">
-          <li>
+      {/* Div para a Lista de Itens */}
+      <div className="w-full max-w-sm bg-black rounded-lg shadow-md p-4 mb-4">
+        <ul className="text-gray-700 space-y-2">
+          <li className="p-2 bg-gray-50 hover:bg-gray-100 rounded-md transition-colors duration-200 cursor-pointer">
             CASA
           </li>
-          <li>
+          <li className="p-2 bg-gray-50 hover:bg-gray-100 rounded-md transition-colors duration-200 cursor-pointer">
             CARRO
           </li>
-          <li>
+          <li className="p-2 bg-gray-50 hover:bg-gray-100 rounded-md transition-colors duration-200 cursor-pointer">
             VIOLÃO
           </li>
-          <li>
+          <li className="p-2 bg-gray-50 hover:bg-gray-100 rounded-md transition-colors duration-200 cursor-pointer">
             DRONE
           </li>
-
-          <li>
+          <li className="p-2 bg-gray-50 hover:bg-gray-100 rounded-md transition-colors duration-200 cursor-pointer">
             SKATE
           </li>
-          <li>
+          <li className="p-2 bg-gray-50 hover:bg-gray-100 rounded-md transition-colors duration-200 cursor-pointer">
             IPHONE
           </li>
-          <li>
+          <li className="p-2 bg-gray-50 hover:bg-gray-100 rounded-md transition-colors duration-200 cursor-pointer">
             TABLET
           </li>
-        </div>
-      </main>
-    </div>
-
-      <div>
-        <aside>
-          <p>Sidebar content</p>
-        </aside>
+        </ul>
       </div>
-      <h1>Hello world</h1></>
 
-
-
-
+      {/* Div para o Botão */}
+      <div className="w-full max-w-sm">
+        <button className="w-full px-4 py-2 font-semibold text-white bg-blue-600 rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-colors duration-200">
+          CADASTRAR NOVO ITEM
+        </button>
+      </div>
+    </div>
   );
 }
